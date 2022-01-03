@@ -18,8 +18,10 @@ Using the Nevada Flag
 ./assets/img/pexels-sebastian-ervi-1763075.jpg
 
 # Locations in Nevada
-| Color | Hex Code |
-| ----------- | ----------- |
-| Flag Main Blue Color | #0033A0 |
-| Main Yellow |#ffa300|
-|Leaf Green|#00843d|
+| Sight Name | Sight City | Sight County |
+| ----------- | ----------- | ----------- |
+| Las Vegas | Paradise, Las Vegas | Clark County |
+| Hoover Dam | Boulder City | Clark County |
+|Red Rock Canyon| Las Vegas | Clark County |
+| Lake Tahoe | Carson City | Douglas County|
+|Area 51| Nevada Test and Training Range | Lincoln County | 
