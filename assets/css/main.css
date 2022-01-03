@@ -142,6 +142,7 @@ h1, h2 {
 .small-jumbo .text-container h2 {
   font-size: 1.5rem;
   color: white;
+  text-transform: capitalize;
 }
 
 main.content {
@@ -207,6 +208,7 @@ main.content .locations-container .location .location-text h2 {
   align-items: center;
   max-height: 500px;
   overflow: hidden;
+  padding: 0 10px;
 }
 .why-nv .why-nv__content .nv-about-pic img {
   width: 100%;
@@ -219,6 +221,9 @@ main.content .locations-container .location .location-text h2 {
 }
 .why-nv .why-nv__content .nv-about-pic img:hover {
   transform: scale(1.2);
+}
+.why-nv .why-nv__content .nv-about {
+  padding: 0 10px;
 }
 .why-nv .why-nv__content .nv-about .btn {
   text-transform: capitalize;
