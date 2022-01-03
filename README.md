@@ -25,3 +25,9 @@ Using the Nevada Flag
 |Red Rock Canyon| Las Vegas | Clark County |
 | Lake Tahoe | Carson City | Douglas County|
 |Area 51| Nevada Test and Training Range | Lincoln County | 
+
+# On the agenda
+* Create Footer
+* Create page/section for Counties
+* Create page/section for Cities
+* Attribution for photos
