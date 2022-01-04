@@ -30,6 +30,14 @@ h1,h2{
         color:var(--off-black) !important;
         font-weight: 600;
     }
+    a.nav-link.non-btn{
+        font-size: 20px;
+        border-bottom:3px solid transparent;
+        transition: border-bottom .2s ease-in-out ;
+        &:hover{
+            border-bottom: 3px solid var(--off-black);
+        }
+    }
     .navbar-nav{
         justify-content: space-around;
         align-items: center;
