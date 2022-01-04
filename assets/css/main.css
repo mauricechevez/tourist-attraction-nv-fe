@@ -112,6 +112,10 @@ h1, h2 {
   font-size: 2rem;
   font-family: "Lobster", cursive !important;
 }
+.navbar span .fas.fa-bars {
+  color: #0033A0;
+  font-size: 1.7rem;
+}
 .navbar a.nav-link {
   color: var(--off-black) !important;
   font-weight: 600;
@@ -155,45 +159,51 @@ h1, h2 {
   height: 100%;
   max-height: 500px;
   margin: 0 auto 50px;
-  border-radius: 30px !important;
-  overflow: hidden;
-  padding-right: 0;
-  padding-left: 0;
 }
-.small-jumbo .overlay {
+.small-jumbo .container {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+}
+.small-jumbo .container .overlay {
+  border-radius: 30px !important;
   width: 100%;
   height: 100%;
   z-index: 2;
+  top: -4px;
   position: absolute;
   margin: 0 auto;
   background-image: linear-gradient(270deg, rgba(0, 11, 38, 0) 5rem, rgba(0, 11, 38, 0.4), rgba(0, 1, 38, 0.5));
 }
-.small-jumbo img {
+.small-jumbo .container img {
   width: 100%;
   height: 100%;
   max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 30px !important;
 }
-.small-jumbo .text-container {
+.small-jumbo .container .text-container {
   position: absolute;
   z-index: 10;
   top: 50%;
   left: 15%;
   transform: translateY(-50%);
 }
-.small-jumbo .text-container h1 {
+.small-jumbo .container .text-container h1 {
   font-size: 4rem;
   color: white;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.small-jumbo .text-container h2 {
+.small-jumbo .container .text-container h2 {
   font-size: 1.5rem;
   color: white;
   text-transform: capitalize;
 }
-.small-jumbo .text-container .btn.btn-outline-warning {
+.small-jumbo .container .text-container .btn.btn-outline-warning {
   font-weight: 600 !important;
 }
 
@@ -359,4 +369,79 @@ footer .socials-container .social-icons__container a.social-icon img {
 }
 footer .socials-container .social-icons__container a.social-icon:nth-child(1) {
   padding-left: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1999px) {
+  main.content .locations-container .location {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .small-jumbo {
+    max-height: 400px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .small-jumbo .container .text-container h1 {
+    font-size: 2.5rem;
+  }
+  .small-jumbo .container .text-container h2 {
+    font-size: 1.2rem;
+  }
+
+  main.content {
+    padding: 20px 25px;
+  }
+  main.content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  main.content .locations-container .location {
+    margin-top: 20px;
+  }
+
+  .why-nv h2 {
+    font-size: 2.5rem;
+  }
+  .why-nv .container.why-nv__content {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+  .why-nv .container.why-nv__content .nv-about {
+    width: 100%;
+    padding: 0;
+  }
+  .why-nv .container.why-nv__content .nv-about p {
+    font-size: 1.2rem;
+  }
+  .why-nv .container.why-nv__content .nv-about a.btn {
+    display: block;
+  }
+  .why-nv .container.why-nv__content .nv-about-pic {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .pinterest-container {
+    padding: 20px;
+  }
+  .pinterest-container .container h2 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    max-height: 400px;
+    height: 100%;
+    padding: 40px 20px 20px;
+  }
+  footer .socials-container {
+    margin-top: 20px;
+  }
 }
